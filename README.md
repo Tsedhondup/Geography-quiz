@@ -1,2 +1,2 @@
 # Geography-quiz
-Rapid geography quiz made with the vanilla JavaScript.
+Geography quiz made using vanilla JavaScript.
