@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="./dist/assets/scripts/quiz.js" type="module" defer></script>
+</head>
+
+<body>
+    <!---- these are template and will dynamically generate by the javascript ----->
+    <template class="t-one">
+        <div class="question-ui">
+            <div class="timer">
+                <input type="text" value="20s">
+            </div>
+            <p class="questions">Q1: What is the capital of Moldova?</p>
+            <ul>
+                <li> <input type="checkbox" name="" id="opt-onea" class="checkBtn">
+                    <label for="opt-onea">Minsk</label>
+                </li>
+                <li> <input type="checkbox" name="" id="q-one-rightA" class="checkBtn">
+                    <label for="q-one-rightA">Chisinau</label>
+                </li>
+                <li><input type="checkbox" name="" id="opt-threea" class="checkBtn">
+                    <label for="opt-threea">Pristina</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-foura" class="checkBtn">
+                    <label for="opt-foura">Bucharest
+                    </label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="next">next</button>
+            </div>
+
+        </div>
+    </template>
+    <template class="t-two">
+        <div class="question-ui">
+            <div class="timer">
+                <input type="text" value="20s">
+            </div>
+            <p class="questions"> Q2: The world largest peninsula?</p>
+            <ul>
+                <li> <input type="checkbox" name="" id="opt-1b" class="checkBtn">
+                    <label for="opt-1b">Indian Peninsula</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-2b" class="checkBtn">
+                    <label for="opt-2b">Scandinavian Peninsula
+                    </label>
+                </li>
+                <li><input type="checkbox" name="" id="q-two-rightB" class="checkBtn">
+                    <label for="q-two-rightB">Arabian Peninsula</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-4b" class="checkBtn">
+                    <label for="opt-4b">Korean Peninsula</label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="next">next</button>
+            </div>
+
+        </div>
+
+    </template>
+    <template class="t-three">
+        <div class="question-ui">
+            <div class="timer">
+                <input type="text" value="20s">
+            </div>
+            <p class="questions">Q3: Which country has the smallest coastline?</p>
+
+            <ul>
+                <li><input type="checkbox" name="" id="opt-1c" class="checkBtn">
+                    <label for="opt-1c">Bhutan</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-2c" class="checkBtn">
+                    <label for="opt-2c">Vatican</label>
+                </li>
+                <li> <input type="checkbox" name="" id="q-three-rightC" class="checkBtn">
+                    <label for="q-three-rightC">Monaco
+                    </label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-4c" class="checkBtn">
+                    <label for="opt-4c">Latvia</label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="next">next</button>
+            </div>
+        </div>
+    </template>
+    <template class="t-four">
+        <div class="question-ui">
+            <div class="timer">
+                <input type="text" value="20s">
+            </div>
+            <p class="questions">Q4: The largest land locked country in the world?</p>
+
+            <ul>
+
+                <li> <input type="checkbox" name="" id="opt-oned" class="checkBtn">
+                    <label for="opt-oned">Russia
+                    </label>
+                </li>
+                <li><input type="checkbox" name="" id="q-four-rightD" class="checkBtn">
+                    <label for="q-four-rightD">Kazakhstan
+                    </label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-threed" class="checkBtn">
+                    <label for="opt-threed">China</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-fourd" class="checkBtn">
+                    <label for="opt-fourd">Mongolia</label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="next">next</button>
+            </div>
+        </div>
+    </template>
+    <template class="t-five">
+        <div class="question-ui">
+            <div class="timer">
+                <input type="text" value="20s">
+            </div>
+            <p class="questions">Q5: Which country have no mountains?</p>
+
+            <ul>
+                <li><input type="checkbox" name="" id="opt-1e" class="checkBtn">
+                    <label for="opt-1e">Portugal</label>
+                </li>
+                <li> <input type="checkbox" name="" id="q-five-rightE" class="checkBtn">
+                    <label for="q-five-rightE">Estonia</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-3e" class="checkBtn">
+                    <label for="opt-3e">Poland</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-4e" class="checkBtn">
+                    <label for="opt-4e">Finland</label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="next">next</button>
+            </div>
+        </div>
+    </template>
+    <template class="t-six">
+        <div class="question-ui">
+            <div class="timer">
+                <input type="text" value="20s">
+            </div>
+            <p class="questions">Q6: What is the highest peak in South America?</p>
+
+            <ul>
+                <li> <input type="checkbox" name="" id="opt-1f" class="checkBtn">
+                    <label for="opt-1f">Andes</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-2f" class="checkBtn">
+                    <label for="opt-2f">Mt. Bianco</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-3f" class="checkBtn">
+                    <label for="opt-3f">Alps
+                    </label>
+                </li>
+
+                <li><input type="checkbox" name="" id="q-six-rightF" class="checkBtn">
+                    <label for="q-six-rightF">Mt. Aconcagua
+                    </label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="next">next</button>
+            </div>
+        </div>
+    </template>
+    <template class="t-seven">
+        <div class="question-ui">
+            <div class="timer">
+                <input type="text" value="20s">
+            </div>
+            <p class="questions">Q7: How many countries are there in North America?</p>
+
+            <ul>
+                <li><input type="checkbox" name="" id="q-seven-rightG" class="checkBtn">
+                    <label for="q-seven-rightG">23</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-twog" class="checkBtn">
+                    <label for="opt-twog">26</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-threeg" class="checkBtn">
+                    <label for="opt-threeg">22</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-fourg" class="checkBtn">
+                    <label for="opt-fourg">21</label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="next">next</button>
+            </div>
+        </div>
+    </template>
+    <template class="t-eight">
+        <div class="question-ui">
+            <div class="timer">
+                <input type="text" value="20s">
+            </div>
+            <p class="questions">Q8: What is the largest lake in Africa?</p>
+
+            <ul>
+                <li><input type="checkbox" name="" id="opt-1h" class="checkBtn">
+                    <label for="opt-1h">Lake Malawi</label>
+                </li>
+                <li> <input type="checkbox" name="" id="q-eight-rightH" class="checkBtn">
+                    <label for="q-eight-rightH">Lake Victoria</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-3h" class="checkBtn">
+                    <label for="opt-3h">Lake Baikal</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-4h" class="checkBtn">
+                    <label for="opt-4h">Lake Tahoe</label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="next">next</button>
+            </div>
+        </div>
+    </template>
+    <template class="t-nine">
+        <div class="question-ui">
+            <div class="timer">
+                <input type="text" value="20s">
+            </div>
+            <p class="questions">Q9: Uluru or Ayers Rock is located in?</p>
+
+            <ul>
+                <li><input type="checkbox" name="" id="opt-1i" class="checkBtn">
+                    <label for="opt-1i">Africa</label>
+                </li>
+                <li> <input type="checkbox" name="" id="q-nine-rightI" class="checkBtn">
+                    <label for="q-nine-rightI">Australia</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-3i" class="checkBtn">
+                    <label for="opt-3i">New Zealand</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-4i" class="checkBtn">
+                    <label for="opt-4i">Asia</label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="next">next</button>
+            </div>
+        </div>
+    </template>
+    <template class="t-ten">
+        <div class="question-ui">
+            <div class="timer">
+                <input type="text" value="20s">
+            </div>
+            <p class="questions">Q10: What is the world's largest desert?</p>
+
+            <ul>
+                <li><input type="checkbox" name="" id="opt-1j" class="checkBtn">
+                    <label for="opt-1j">Sahara desert</label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-2j" class="checkBtn">
+                    <label for="opt-2j">Arabian desert</label>
+                </li>
+                <li> <input type="checkbox" name="" id="q-ten-rightJ" class="checkBtn">
+                    <label for="q-ten-rightJ">Antarctic desert
+                    </label>
+                </li>
+                <li> <input type="checkbox" name="" id="opt-4j" class="checkBtn">
+                    <label for="opt-4j">Thar desert</label>
+                </li>
+            </ul>
+            <div class="btns">
+                <button class="next">next</button>
+            </div>
+        </div>
+    </template>
+    <!------- result ui -------->
+    <template class="result-template">
+        <div class="result-ui">
+            <h1>result</h1>
+            <h2 class="feedBack"></h2>
+            <p> <b>Total questions</b> : 10</p>
+            <p class="right-p"></p>
+            <p class="wrong-p"></p>
+            <div class="restart">
+                <button>restart</button>
+            </div>
+        </div>
+    </template>
+    <section>
+        <h2 class="quiz-name">Geography Quiz</h2>
+
+        <div class="question-container">
+
+            <div class="start-div">
+                <div> <button class="start generateUI">start</button>
+                </div>
+                <h2>Good luck!</h2>
+            </div>
+
+            <!------- the questions are being dynamically generate javascript ------>
+        </div>
+
+    </section>
+</body>
+
+</html>
