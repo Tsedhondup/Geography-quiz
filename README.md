@@ -43,7 +43,7 @@ http://localhost:5500
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/Tsedhondup/tsering-dhondup-bandsite/refs/heads/main/assets/images/site-screenshot.jpg)
+![App Screenshot](https://raw.githubusercontent.com/Tsedhondup/Geography-quiz/refs/heads/main/app-screenshot.jpg)
 
 
 ## Author
