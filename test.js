@@ -75,8 +75,5 @@ function nam() {
 
   const timerId2 = setTimeout(() => {
     clearInterval(timerId);
-    // quizObject.generateQuestionUi(xElementVal);
-    // xElementVal += 1;
   }, 30000);
-  // clearTimeout(timerId2);
 }

@@ -7,11 +7,8 @@ let wrongAnswer = 0;
 let cancelTimer = 0;
 export let checkboxCount = 0;
 let intervalId;
-// let userName = prompt("Hi its fun quiz, tell me your name");
 let userName;
-// if (!userName) {
-//   userName = "Friends!";
-// }
+
 const correctAnswerIds = [
   "q-one-rightA",
   "q-two-rightB",
@@ -67,8 +64,7 @@ export class QuizComponent {
     wrongTag.append(`${wrongAnswer}`);
     const loadingMsg = document.createElement("div");
     loadingMsg.setAttribute("class", "loader");
-    // loadingMsg.style.textAlign = "center";
-    // loadingMsg.append("Generating result..");
+  
 
     qContainer.innerHTML = "";
     qContainer.classList.add("js_display-flex");

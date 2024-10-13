@@ -1,5 +1,3 @@
-// import { checkboxCount } from "./quiz";
-
 export class CheckboxComponent {
   static handlerCheckbox(checkboxs) {
     checkboxs.forEach((item) => {
