@@ -2,7 +2,7 @@
 # [Geography-quiz](https://github.com/Tsedhondup/Geography-quiz.git) 
 
 
-A geography quiz is an interactive quiz game, that allows players to guess the correct answer within time allocation.
+A geography quiz is an interactive quiz game, that allows players to guess the correct answer within time allocation. [Open App](https://tseringdhondupgeographyquiz.netlify.app/)
 ## Features
 
 - Timer
